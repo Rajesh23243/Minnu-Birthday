@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Baby 🤍</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div id="stars"></div>
+    <div id="hearts"></div>
+
+    <!-- Music -->
+    <audio id="music" loop>
+        <source src="music/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicButton">
+        🎵
+    </button>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                ✨ Something I made only for you ✨
+            </div>
+
+            <h1>
+                Hey <span class="pink floating-word">Baby</span> 🤍
+            </h1>
+
+            <p class="intro">
+                Before you celebrate your birthday,
+                I wanted to give you something a little different...
+            </p>
+
+            <p class="intro">
+                A tiny journey through some memories,
+                feelings and moments that mean more to me
+                than I can properly explain.
+            </p>
+
+            <button onclick="startSurprise()">
+                Begin Our Little Story ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+
+        <div class="content">
+
+            <div class="small-title">Once upon a time...</div>
+
+            <h2>
+                It all started
+                <span class="pink floating-word">long ago</span> 💝
+            </h2>
+
+            <p>
+                We've known each other since childhood.
+                Life took us through different paths,
+                different moments and different versions of ourselves.
+            </p>
+
+            <p>
+                But somehow...
+                our paths found their way back to each other.
+            </p>
+
+            <p class="highlight">
+                And I'm really glad they did. ❤️
+            </p>
+
+            <button onclick="nextPage()">
+                Keep Going With Me 🌙
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+
+        <div class="content">
+
+            <div class="small-title">
+                The day our story became something more...
+            </div>
+
+            <div class="date">
+                16 · 11 · 2024
+            </div>
+
+            <p>
+                Some dates are just dates.
+            </p>
+
+            <p>
+                But some dates quietly become
+                a beautiful part of your heart.
+            </p>
+
+            <p>
+                For me,
+                this is one of those dates.
+            </p>
+
+            <div class="heart-pulse">
+                💘
+            </div>
+
+            <button onclick="nextPage()">
+                Remember With Me 📸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+
+        <div class="content memories-page">
+
+            <div class="small-title">
+                Little pieces of us
+            </div>
+
+            <h2>
+                Our Memories 📸
+            </h2>
+
+            <div class="memory-card">
+
+                <div class="photo-wrapper">
+                    <img id="memoryPhoto"
+                         src="photos/memory1.jpg"
+                         alt="Our memory">
+                </div>
+
+                <div class="memory-number" id="memoryNumber">
+                    Memory 1 / 10
+                </div>
+
+                <p class="caption" id="memoryCaption">
+                    If I could freeze one moment with you… it would be this one. ❤️‍🩹✨
+                </p>
+
+            </div>
+
+            <button onclick="nextMemory()">
+                Next Little Memory 💕
+            </button>
+
+            <button class="secondary-btn" onclick="nextPage()">
+                There's More To Our Story ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+
+        <div class="content">
+
+            <div class="small-title">
+                Places that became memories
+            </div>
+
+            <h2>
+                Everywhere feels better
+                <span class="pink">with you</span> 💗
+            </h2>
+
+            <div class="places">
+
+                <div class="place">
+                    <span>🛕</span>
+                    <strong>Temples</strong>
+                    <small>Peaceful moments together</small>
+                </div>
+
+                <div class="place">
+                    <span>🎬</span>
+                    <strong>Movies</strong>
+                    <small>Laughs, snacks and memories</small>
+                </div>
+
+                <div class="place">
+                    <span>🛍️</span>
+                    <strong>Malls</strong>
+                    <small>Random walks and conversations</small>
+                </div>
+
+                <div class="place">
+                    <span>🏡</span>
+                    <strong>Airbnb</strong>
+                    <small>Our little private world</small>
+                </div>
+
+            </div>
+
+            <p class="highlight">
+                The place never mattered as much as
+                the person standing beside me.
+            </p>
+
+            <button onclick="nextPage()">
+                A Few Things I Love About You 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page" id="page6">
+
+        <div class="content">
+
+            <div class="small-title">
+                If I had to explain why you are special...
+            </div>
+
+            <h2>
+                I probably couldn't. 🥹
+            </h2>
+
+            <p>
+                Because it's not just one thing.
+            </p>
+
+            <div class="love-cards">
+
+                <div class="love-card">
+                    <div class="love-icon">👀</div>
+                    <h3>Your Eyes</h3>
+                    <p>
+                        There is something about your eyes
+                        that always makes me stop for a moment.
+                    </p>
+                </div>
+
+                <div class="love-card">
+                    <div class="love-icon">😊</div>
+                    <h3>Your Smile</h3>
+                    <p>
+                        Your smile has this little magic
+                        that somehow makes my day better.
+                    </p>
+                </div>
+
+                <div class="love-card">
+                    <div class="love-icon">🫶🏻</div>
+                    <h3>Simply You</h3>
+                    <p>
+                        At the end of everything,
+                        I just love you for being you.
+                    </p>
+                </div>
+
+            </div>
+
+            <button onclick="nextPage()">
+                Now, Something From My Heart 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 7 -->
+    <section class="page letter-page" id="page7">
+
+        <div class="content">
+
+            <div class="small-title">
+                A letter I wanted you to have...
+            </div>
+
+            <h2>
+                Dear <span class="pink">Minnu</span> 💌
+            </h2>
+
+            <div class="letter">
+
+                <p>
+                    I don't really know where to begin,
+                    because whenever I try to put everything
+                    I feel for you into words,
+                    somehow the words never feel enough.
+                </p>
+
+                <p>
+                    We've known each other since childhood.
+                    We watched time pass, grew into different
+                    versions of ourselves, and somehow found
+                    our way into each other's lives again.
+                </p>
+
+                <p>
+                    And honestly...
+                    I'm so grateful that we did.
+                </p>
+
+                <p>
+                    Because now I have memories with you
+                    that I never want to lose.
+                </p>
+
+                <p>
+                    The temples we visited.
+                    The movies we watched.
+                    The places we went.
+                    The silly moments.
+                    The quiet moments.
+                    The days when we did absolutely nothing
+                    but still somehow had the best time.
+                </p>
+
+                <p>
+                    I love all of them.
+                    Not because of where we were,
+                    but because <span class="pink">you were there.</span>
+                </p>
+
+                <p>
+                    You have this beautiful way of making
+                    ordinary moments feel special.
+                    A simple smile from you can change my mood.
+                    A little conversation with you can stay
+                    in my mind for hours.
+                </p>
+
+                <p>
+                    And sometimes,
+                    just knowing you're there
+                    is enough to make a difficult day feel lighter.
+                </p>
+
+                <p>
+                    I don't know exactly what the future
+                    has planned for us.
+                    I don't know what every tomorrow will look like.
+                </p>
+
+                <p>
+                    But I do know one thing...
+                </p>
+
+                <p class="big-love">
+                    I want to keep making memories with you. 🩷
+                </p>
+
+                <p>
+                    I want more random days.
+                    More laughs.
+                    More pictures.
+                    More places.
+                    More little fights that end in smiles.
+                    More moments where we take care of each other.
+                </p>
+
+                <p>
+                    More days where I can look at you
+                    and quietly think...
+                </p>
+
+                <p class="quote">
+                    "I'm lucky to have her."
+                </p>
+
+                <p>
+                    Thank you for being you.
+                    Thank you for every memory.
+                    Thank you for every smile.
+                    Thank you for becoming such a beautiful
+                    part of my life.
+                </p>
+
+                <p>
+                    And on your birthday,
+                    more than anything,
+                    I just want you to know...
+                </p>
+
+                <p class="big-love">
+                    You are deeply loved. ❤️
+                </p>
+
+                <p>
+                    You are incredibly special.
+                    And you will always have
+                    a very special place in my heart.
+                </p>
+
+                <p class="birthday-line">
+                    Happy Birthday,
+                    my beautiful Minnu. 🥹💗
+                </p>
+
+                <p class="signature">
+                    Forever with love,<br>
+                    Rajesh ❤️
+                </p>
+
+            </div>
+
+            <button onclick="nextPage()">
+                I Have One More Little Surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 8 -->
+    <section class="page" id="page8">
+
+        <div class="content">
+
+            <div class="small-title">
+                One last little thing...
+            </div>
+
+            <h2>
+                I got you a
+                <span class="pink">gift</span> 🎁
+            </h2>
+
+            <div class="gift-container">
+
+                <div class="gift" id="gift" onclick="openGift()">
+                    🎁
+                </div>
+
+                <div class="gift-hint" id="giftHint">
+                    Tap the gift 💗
+                </div>
+
+            </div>
+
+            <div class="gift-message" id="giftMessage">
+
+                <p>
+                    My real gift to you is simple...
+                </p>
+
+                <p>
+                    More memories.
+                    More laughter.
+                    More adventures.
+                    More moments.
+                    More reasons to smile together.
+                </p>
+
+                <p>
+                    Because if I could choose one thing
+                    for your future,
+                    I'd choose a life filled with
+                    happiness, love and beautiful moments.
+                </p>
+
+                <p class="big-love">
+                    And hopefully...
+                    many of those moments
+                    will be with me. 🥹💞
+                </p>
+
+            </div>
+
+            <button id="giftButton"
+                    class="hidden"
+                    onclick="nextPage()">
+                One Last Thing... ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 9 -->
+    <section class="page final-page" id="page9">
+
+        <div class="content final-content">
+
+            <div class="final-hearts">
+                ❤️ 💗 ❤️
+            </div>
+
+            <div class="small-title">
+                And finally...
+            </div>
+
+            <h1>
+                Happy Birthday
+                <span class="pink">My Wife</span> 🎂
+            </h1>
+
+            <div class="big-heart">
+                💞
+            </div>
+
+            <p class="final-love">
+                I love you, Harshini.
+            </p>
+
+            <p class="final-message">
+                If I could ask life for just one thing, I wouldn’t ask for more time—
+                I’d ask for one lifetime where I get to keep finding my way back to you, again and again. 💓
+
+                You may never truly know how much you mean to me, because even a lifetime of words could never explain
+                 what my heart feels every time I look at you. 💝💞
+
+                 If someday you forget how much you mean to me, just remember this—
+                 there was once a heart that quietly chose you, and it never stopped. 💘
+            </p>
+
+            <p class="final-message">
+                No matter where life takes us,
+                I will always treasure
+                every memory we've created together.
+            </p>
+
+            <p class="forever">
+                Forever yours,<br>
+                Rajesh 🤍
+            </p>
+
+            <div class="final-stars">
+                💘 💝 💞 💓
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
